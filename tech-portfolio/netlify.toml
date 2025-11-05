@@ -1,5 +1,3 @@
-# netlify.toml
 [build]
-  base = "tech-portfolio"
   command = "npm run build"
-  publish = "tech-portfolio/dist"
+  publish = "dist"
