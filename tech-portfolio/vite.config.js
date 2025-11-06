@@ -1,13 +1,11 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  css: {
-    // Disable lightningcss for compatibility with Netlify’s Linux build system
-    lightningcss: false,
-  },
+  base: './', // ✅ important for Netlify or subfolder builds
   build: {
-    outDir: "dist",
+    outDir: 'dist',
   },
-});
+})
